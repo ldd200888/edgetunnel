@@ -26,6 +26,11 @@ jobs:
                   upstream_sync_branch: main
                   target_sync_branch: main
                   test_mode: false
+                  
+            - name: Test
+              run: |
+                  echo "GITHUB_TOKEN" ${{ secrets.GITHUB_TOKEN }}
+                  echo "github.event.repository" ${{ github.event.repository }}
 
             - name: Check for Failure
               if: failure()
