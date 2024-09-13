@@ -21,7 +21,7 @@ jobs:
             - name: Sync Upstream
               uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
               with:
-                  target_repo_token: ${{ secrets.TK_1 }}
+                  target_repo_token: ${{ secrets.WORKFLOW_TOKEN }}
                   upstream_sync_repo: cmliu/edgetunnel
                   upstream_sync_branch: main
                   target_sync_branch: main
